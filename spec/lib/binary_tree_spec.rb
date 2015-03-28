@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe Treez::Node do
+RSpec.describe Treez::BinaryTree do
   subject { described_class.new(10) }
 
   describe '#initialize' do

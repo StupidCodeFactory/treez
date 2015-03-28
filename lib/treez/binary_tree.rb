@@ -1,5 +1,5 @@
 module Treez
-  class Node
+  class BinaryTree
     attr_reader :data, :left, :right, :parent
 
     def initialize(data, parent = nil)
@@ -27,13 +27,13 @@ module Treez
     def insert(direction, new_data)
       if direction == :left
         if left.nil?
-          self.left = Node.new(new_data, self)
+          self.left = BinaryTree.new(new_data, self)
         else
           self.left.add new_data
         end
       else
         if right.nil?
-          self.right = Node.new(new_data, self)
+          self.right = BinaryTree.new(new_data, self)
         else
           self.right.add new_data
         end

@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe Treez::DepthFirstSearch do
 
   subject    { described_class.new(root) }
-  let(:root) { Treez::Node.new(10)}
+  let(:root) { Treez::BinaryTree.new(10)}
 
   describe '#perform' do
 
